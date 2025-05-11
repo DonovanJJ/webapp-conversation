@@ -1,6 +1,8 @@
 import type { FC } from 'react'
 import classNames from 'classnames'
 import style from './style.module.css'
+import logo from '../icons/shrek.png'
+import Image from 'next/image'
 
 export type AppIconProps = {
   size?: 'xs' | 'tiny' | 'small' | 'medium' | 'large'
@@ -28,7 +30,7 @@ const AppIcon: FC<AppIconProps> = ({
         background,
       }}
     >
-      🚀
+      <Image src={logo} alt='image not found' style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
     </span>
   )
 }
