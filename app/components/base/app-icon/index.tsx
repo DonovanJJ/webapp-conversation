@@ -28,7 +28,7 @@ const AppIcon: FC<AppIconProps> = ({
         background,
       }}
     >
-      🚀
+      <img src='../icons/shrek.png' alt='app logo for the bot' />
     </span>
   )
 }
